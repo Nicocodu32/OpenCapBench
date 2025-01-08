@@ -26,6 +26,7 @@ OpenCapBench is a benchmark designed to bridge the gap between pose estimation a
 ## Key Results
 
 SynthPose demonstrates superior performance for kinematics compare to models predicting COCO keypoints or SMPL mesh.  
+Here are the results on OpenCapBench:
 
 ![Results Comparison](docs/static/images/OpenCapBench_cr.svg)
 
@@ -76,4 +77,8 @@ If you find OpenCapBench useful in your research, please cite:
 - [Supplementary Material](docs/static/pdfs/supplementary_material.pdf)
 - [GitHub Repository](https://github.com/StanfordMIMI/OpenCapBench)
 
-```
+---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
