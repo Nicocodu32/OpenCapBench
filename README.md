@@ -1,3 +1,8 @@
+## 🚀 SynthPose Update!
+
+SynthPose models are now available on Hugging Face Transformers 🤗, and you can test it in a few clicks in a dedicated Hugging Face Space!
+- 🤗 Weights and model card: [synthpose-vitpose-base-hf](https://huggingface.co/yonigozlan/synthpose-vitpose-base-hf), [synthpose-vitpose-huge-hf](https://huggingface.co/yonigozlan/synthpose-vitpose-huge-hf)
+- 🤗 Space: [Synthpose-Markerless-MoCap-VitPose](https://huggingface.co/spaces/yonigozlan/Synthpose-Markerless-MoCap-VitPose)
 # OpenCapBench
 
 OpenCapBench is a benchmark designed to bridge the gap between pose estimation and biomechanics. It evaluates pose estimation models under physiological constraints using consistent kinematic metrics computed via [OpenSim](https://opensim.stanford.edu/).
