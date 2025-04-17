@@ -1,2 +1,5 @@
-./be_imagedata_download/*
-./models/*
+be_imagedata_download/*
+models/*
+bedlam_annotations/*
+bedlam_reannotated/*
+*pycache*

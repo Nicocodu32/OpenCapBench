@@ -18,7 +18,7 @@ ROTATION_MATRIX_2D_90_CLOCKWISE = np.array([[0, 1], [-1, 0]])
 smplx_model_male = smplx.create(
     MODEL_FOLDER,
     model_type="smplx",
-    gender="neutral",
+    gender="male",
     ext="npz",
     flat_hand_mean=True,
     num_betas=11,
@@ -92,7 +92,7 @@ class DatasetGenerator:
     def __init__(
         self,
         annotation_files_path: str,
-        output_path: str = "infinity_dataset_combined",
+        output_path: str = "BEDLAM_dataset_combined",
         sample_rate: int = 6,
     ):
         self.img_width = 1280
@@ -280,7 +280,7 @@ class DatasetGenerator:
 
 if __name__ == "__main__":
     dataset_generator = DatasetGenerator(
-        annotation_files_path="../all_npz_12_validation",
+        annotation_files_path="/home/ngouget/Codes/OpenCapBench/bedlam_annotations/smplx",
         output_path="bedlam_reannotated",
         sample_rate=6,
     )
