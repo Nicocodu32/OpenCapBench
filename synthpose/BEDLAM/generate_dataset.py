@@ -281,7 +281,7 @@ class DatasetGenerator:
 if __name__ == "__main__":
     dataset_generator = DatasetGenerator(
         annotation_files_path="/home/ngouget/Codes/OpenCapBench/bedlam_annotations/smplx",
-        output_path="bedlam_reannotated",
+        output_path="BEDLAM_reannotated_COSMIK",
         sample_rate=6,
     )
     dataset_generator.generate_dataset()

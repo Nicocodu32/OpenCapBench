@@ -120,7 +120,7 @@ exercises = [
 K1 = np.array([[311.11, 0.0, 112.0], [0.0, 311.11, 112.0], [0.0, 0.0, 1.0]])
 K2 = np.array([[245.0, 0.0, 112.0], [0.0, 245.0, 112.0], [0.0, 0.0, 1.0]])
 
-AUGMENTED_VERTICES_FILE_PATH = "/home/ngouget/Codes/OpenCapBench/synthpose/resource/vertices_keypoints_corr.csv"
+AUGMENTED_VERTICES_FILE_PATH = "/home/ngouget/Codes/OpenCapBench/synthpose/resource/vertices_keypoints_COSMIK.csv"
 AUGMENTED_VERTICES_INDEX_DICT = load_augmented_corr()
 AUGMENTED_VERTICES_NAMES = list(AUGMENTED_VERTICES_INDEX_DICT.keys())
 COCO_VERTICES_NAME = [
@@ -298,57 +298,10 @@ JSON_CATEGORIES = [
     {
         "id": 0,
         "augmented_keypoints": [
-            "sternum",
-            "rshoulder",
-            "lshoulder",
-            "r_lelbow",
-            "l_lelbow",
-            "r_melbow",
-            "l_melbow",
-            "r_lwrist",
-            "l_lwrist",
-            "r_mwrist",
-            "l_mwrist",
-            "r_ASIS",
-            "l_ASIS",
-            "r_PSIS",
-            "l_PSIS",
-            "r_knee",
-            "l_knee",
-            "r_mknee",
-            "l_mknee",
-            "r_ankle",
-            "l_ankle",
-            "r_mankle",
-            "l_mankle",
-            "r_5meta",
-            "l_5meta",
-            "r_toe",
-            "l_toe",
-            "r_big_toe",
-            "l_big_toe",
-            "l_calc",
-            "r_calc",
             "r_bpinky",
             "l_bpinky",
-            "r_tpinky",
-            "l_tpinky",
             "r_bindex",
             "l_bindex",
-            "r_tindex",
-            "l_tindex",
-            "r_tmiddle",
-            "l_tmiddle",
-            "r_tring",
-            "l_tring",
-            "r_bthumb",
-            "l_bthumb",
-            "r_tthumb",
-            "l_tthumb",
-            "C7",
-            "L2",
-            "T11",
-            "T6",
         ],
         "coco_keypoints": [
             "nose",

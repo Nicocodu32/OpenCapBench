@@ -3,3 +3,4 @@ models/*
 bedlam_annotations/*
 bedlam_reannotated/*
 *pycache*
+BEDLAM_reannotated_COSMIK/*
