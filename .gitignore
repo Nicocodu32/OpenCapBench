@@ -4,3 +4,5 @@ bedlam_annotations/*
 bedlam_reannotated/*
 *pycache*
 BEDLAM_reannotated_COSMIK/*
+coco_annotations/*
+mmpose_OCB/*

@@ -184,7 +184,7 @@ class DatasetGenerator:
 
         bbox = self.get_bbox(projected_vertices)
 
-        coco_landmarks = [0] * 3 * 17
+        coco_landmarks = [0] * 3 * 26
 
         if np.isnan(projected_vertices_anatomical).any():
             return {}, {}, False

@@ -141,6 +141,15 @@ COCO_VERTICES_NAME = [
     "right_knee",
     "left_ankle",
     "right_ankle",
+    "head",
+    "neck",
+    "hip",
+    "left_big_toe",
+    "right_big_toe",
+    "left_small_toe",
+    "right_small_toe",
+    "left_heel",
+    "right_heel",
 ]
 
 MODEL_FOLDER = "/home/ngouget/Codes/OpenCapBench/models/models_smplx_v1_1/models"
@@ -321,6 +330,15 @@ JSON_CATEGORIES = [
             "right_knee",
             "left_ankle",
             "right_ankle",
+            "head",
+            "neck",
+            "hip",
+            "left_big_toe",
+            "right_big_toe",
+            "left_small_toe",
+            "right_small_toe",
+            "left_heel",
+            "right_heel",
         ],
     }
 ]

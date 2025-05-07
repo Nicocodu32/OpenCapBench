@@ -1,0 +1,12 @@
+To install OpenCapBench and mmpose on pfcalcul, you need to :
+1. Connect to pfcalcul
+2. Install miniconda (miniforge3) on pfcalcul/work/login
+3. Create openmmlab environment with python 3.8
+4. conda install pytorch==1.8.0 torchvision==0.9.0 torchaudio==0.8.0 -c pytorch
+5. git clone OpenCapBench repo and install it as it is explained in the README
+6. git clone mmpose repo inside OpenCapBench
+7. Download mmcv 2.1.0 zipped from https://github.com/open-mmlab/mmcv/tree/v2.1.0 and extract it next to mmpose repo
+8. pip install -e . into mmcv
+9. clone mmdetection 3.3.0 repo next to them from github and install it with pip install -e .
+10. pip install -r requirements.txt into mmpose then pip install -e .
+11. Everythong should approximately work without issues
