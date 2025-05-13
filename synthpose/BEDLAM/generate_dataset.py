@@ -268,7 +268,7 @@ class DatasetGenerator:
             it_file += 1
 
         with open(
-            os.path.join(self.output_path, "annotations.json"),
+            os.path.join(self.output_path, "val_annotations.json"),
             "w",
             encoding="utf-8",
         ) as f:
@@ -280,7 +280,7 @@ class DatasetGenerator:
 
 if __name__ == "__main__":
     dataset_generator = DatasetGenerator(
-        annotation_files_path="/home/ngouget/Codes/OpenCapBench/bedlam_annotations/smplx",
+        annotation_files_path="/home/ngouget/Codes/OpenCapBench/bedlam_annotations/smplx/validation",
         output_path="BEDLAM_reannotated_COSMIK",
         sample_rate=6,
     )

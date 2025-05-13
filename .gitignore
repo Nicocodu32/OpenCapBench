@@ -1,8 +1,7 @@
-be_imagedata_download/*
 models/*
-bedlam_annotations/*
-bedlam_reannotated/*
+bedlam_annotations
+bedlam_reannotated
 *pycache*
-BEDLAM_reannotated_COSMIK/*
-coco_annotations/*
-mmpose_OCB/*
+BEDLAM_reannotated_COSMIK
+coco_annotations
+mmpose_test
