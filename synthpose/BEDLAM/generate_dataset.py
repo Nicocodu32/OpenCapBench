@@ -6,6 +6,8 @@ import numpy as np
 import smplx
 import torch
 
+import sys
+
 from ..constants import (
     AUGMENTED_VERTICES_INDEX_DICT,
     AUGMENTED_VERTICES_NAMES,
@@ -94,12 +96,14 @@ class DatasetGenerator:
         annotation_files_path: str,
         output_path: str = "BEDLAM_dataset_combined",
         sample_rate: int = 6,
+        step: str = "training",
     ):
         self.img_width = 1280
         self.img_height = 720
         self.annotation_files_path = annotation_files_path
         self.output_path = output_path
         self.sample_rate = sample_rate
+        self.step = step
         self.data_dict = {
             "infos": {},
             "images": [],
@@ -266,9 +270,11 @@ class DatasetGenerator:
                     iteration += 1
 
             it_file += 1
+        
+        nb_keypoints = len(AUGMENTED_VERTICES_NAMES)
 
         with open(
-            os.path.join(self.output_path, "val_annotations.json"),
+            os.path.join(self.output_path, f"{self.step}_annotations_{nb_keypoints}kpts.json"),
             "w",
             encoding="utf-8",
         ) as f:
@@ -279,9 +285,11 @@ class DatasetGenerator:
 
 
 if __name__ == "__main__":
+    step = sys.argv[1]
     dataset_generator = DatasetGenerator(
-        annotation_files_path="/home/ngouget/Codes/OpenCapBench/bedlam_annotations/smplx/validation",
-        output_path="BEDLAM_reannotated_16kpts",
+        annotation_files_path=f"../datasets/HPE_training_data/bedlam/data/bedlam_labels/all_npz_12_{step}",
+        output_path="../datasets/HPE_training_data/bedlam/data/bedlam_labels/bedlam_reannotated",
         sample_rate=6,
+        step=step,
     )
     dataset_generator.generate_dataset()

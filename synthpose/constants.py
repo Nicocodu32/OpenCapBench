@@ -60,12 +60,12 @@ SEQ_NAMES = [
     "ParkingLot2_017_pushup2",
 ]
 
-SMPLX_MODEL_DIR = "/home/ngouget/Codes/OpenCapBench/models/models_smplx_v1_1/models/smplx"
+SMPLX_MODEL_DIR = "./models/models_smplx_v1_1/models/smplx"
 SET = "test"
 BODIES_PATH = "../"
 SCAN_CALIBRATION_PATH = "../scan_calibration"
-IMGEXT = json.load(open("/home/ngouget/Codes/OpenCapBench/synthpose/resource/imgext.json", "r"))
-GENDERS_PATH = "/home/ngouget/Codes/OpenCapBench/synthpose/resource/gender.json"
+IMGEXT = json.load(open("./synthpose/resource/imgext.json", "r"))
+GENDERS_PATH = "./synthpose/resource/gender.json"
 
 
 def load_augmented_corr():
@@ -120,7 +120,7 @@ exercises = [
 K1 = np.array([[311.11, 0.0, 112.0], [0.0, 311.11, 112.0], [0.0, 0.0, 1.0]])
 K2 = np.array([[245.0, 0.0, 112.0], [0.0, 245.0, 112.0], [0.0, 0.0, 1.0]])
 
-AUGMENTED_VERTICES_FILE_PATH = "/home/ngouget/Codes/OpenCapBench/synthpose/resource/vertices_keypoints_16kpts.csv"
+AUGMENTED_VERTICES_FILE_PATH = "./synthpose/resource/vertices_keypoints_16kpts.csv"
 AUGMENTED_VERTICES_INDEX_DICT = load_augmented_corr()
 AUGMENTED_VERTICES_NAMES = list(AUGMENTED_VERTICES_INDEX_DICT.keys())
 COCO_VERTICES_NAME = [
@@ -152,7 +152,7 @@ COCO_VERTICES_NAME = [
     "right_heel",
 ]
 
-MODEL_FOLDER = "/home/ngouget/Codes/OpenCapBench/models/models_smplx_v1_1/models"
+MODEL_FOLDER = "./models/models_smplx_v1_1/models"
 
 
 JOINT_NAMES = [
