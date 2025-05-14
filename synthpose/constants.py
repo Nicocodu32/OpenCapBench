@@ -120,7 +120,7 @@ exercises = [
 K1 = np.array([[311.11, 0.0, 112.0], [0.0, 311.11, 112.0], [0.0, 0.0, 1.0]])
 K2 = np.array([[245.0, 0.0, 112.0], [0.0, 245.0, 112.0], [0.0, 0.0, 1.0]])
 
-AUGMENTED_VERTICES_FILE_PATH = "/home/ngouget/Codes/OpenCapBench/synthpose/resource/vertices_keypoints_COSMIK.csv"
+AUGMENTED_VERTICES_FILE_PATH = "/home/ngouget/Codes/OpenCapBench/synthpose/resource/vertices_keypoints_16kpts.csv"
 AUGMENTED_VERTICES_INDEX_DICT = load_augmented_corr()
 AUGMENTED_VERTICES_NAMES = list(AUGMENTED_VERTICES_INDEX_DICT.keys())
 COCO_VERTICES_NAME = [
@@ -307,6 +307,18 @@ JSON_CATEGORIES = [
     {
         "id": 0,
         "augmented_keypoints": [
+            "nose",
+            "left_eye",
+            "right_eye",
+            "left_eye",
+            "right_ear",
+            "head",
+            "right_small_toe",
+            "left_small_toe",
+            "right_big_toe",
+            "left_big_toe",
+            "left_heel",
+            "right_heel",
             "r_bpinky",
             "l_bpinky",
             "r_bindex",

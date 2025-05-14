@@ -5,3 +5,8 @@ bedlam_reannotated
 BEDLAM_reannotated_COSMIK
 coco_annotations
 mmpose_test
+BEDLAM_reannotated_16kpts
+mpii
+crowdpose
+aic
+ochuman
