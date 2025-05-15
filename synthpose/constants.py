@@ -310,7 +310,7 @@ JSON_CATEGORIES = [
             "nose",
             "left_eye",
             "right_eye",
-            "left_eye",
+            "left_ear",
             "right_ear",
             "head",
             "right_small_toe",
