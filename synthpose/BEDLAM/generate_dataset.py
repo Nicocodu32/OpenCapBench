@@ -287,8 +287,8 @@ class DatasetGenerator:
 if __name__ == "__main__":
     step = sys.argv[1]
     dataset_generator = DatasetGenerator(
-        annotation_files_path=f"../datasets/HPE_training_data/bedlam/data/bedlam_labels/all_npz_12_{step}",
-        output_path="../datasets/HPE_training_data/bedlam/data/bedlam_labels/bedlam_reannotated",
+        annotation_files_path=f"/pfcalcul/datasets/HPE_training_data/bedlam/data/bedlam_labels/all_npz_12_{step}",
+        output_path="/pfcalcul/datasets/HPE_training_data/bedlam/data/bedlam_labels/bedlam_reannotated",
         sample_rate=6,
         step=step,
     )
