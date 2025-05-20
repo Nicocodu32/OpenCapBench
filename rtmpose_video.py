@@ -32,8 +32,8 @@ output_csv = '/home/ngouget/Codes/Results/dance_short.csv'
 
 det_config = '/home/ngouget/Codes/OpenCapBench/mmpose/projects/rtmpose/rtmdet/person/rtmdet_nano_320-8xb32_coco-person.py'
 det_checkpoint = 'https://download.openmmlab.com/mmpose/v1/projects/rtmpose/rtmdet_nano_8xb32-100e_coco-obj365-person-05d8511e.pth'
-pose_config = '/home/ngouget/Codes/OpenCapBench/mmpose/configs/body_2d_keypoint/topdown_heatmap/synthpose/rtmpose-m_8xb512-700e_BEDLAM-augmented-256x192.py'
-pose_checkpoint = '/home/ngouget/Codes/OpenCapBench/mmpose_OCB/work_dirs/rtmpose-m_8xb512-700e_bedlam-coco_halpe26aug_256x192/best_AUC_epoch_2.pth'
+pose_config = '/home/ngouget/Codes/OpenCapBench/mmpose/configs/body_2d_keypoint/rtmpose/synthpose/rtmpose-m_8xb512-700e_available-body8_halpe26aug_256x192.py'
+pose_checkpoint = '/home/ngouget/Codes/OpenCapBench/mmpose/work_dirs/rtmpose-m_8xb512-700e_available-body8_halpe26aug_256x192/epoch_2.pth'
 
 
 device = 'cpu'
